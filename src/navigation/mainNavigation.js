@@ -1,6 +1,6 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { HomeScreen, ProfileScreen } from "../screens";
-import { Feather, FontAwesome } from "@expo/vector-icons";
+import { HomeScreen, ProfileScreen, SalaryCalculator } from "../screens/index";
+import { Feather, FontAwesome, Entypo } from "@expo/vector-icons";
 
 const Tab = createBottomTabNavigator();
 
@@ -9,10 +9,20 @@ const { Navigator, Screen } = Tab;
 export const MainNavigation = () => {
   return (
     <Navigator
+      initialRouteName="Home"
       screenOptions={{
         headerShown: false,
       }}
     >
+      <Screen
+        options={{
+          tabBarIcon: ({ color, size }) => {
+            return <Entypo name="calculator" size={size} color={color} />;
+          },
+        }}
+        name="Salary"
+        component={SalaryCalculator}
+      />
       <Screen
         options={{
           tabBarIcon: ({ color, size }) => {

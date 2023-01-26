@@ -10,10 +10,12 @@ const { Navigator, Screen } = Stack;
 
 export const AppNavigation = () => {
   return (
-    <Navigator screenOptions={{
-        headerShown: false
-    }}>
-      <Screen options={{}} name="Login" component={LoginScreen} />
+    <Navigator
+      screenOptions={{
+        headerShown: false,
+      }}
+    >
+      <Screen name="Login" component={LoginScreen} />
       <Screen name="SignUp" component={SignUpScreen} />
       <Screen name="MainNavigation" component={MainNavigation} />
     </Navigator>
