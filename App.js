@@ -1,7 +1,4 @@
 import React from "react";
-// import { View,Text } from "react-native";
-
-// import { RootNavigation } from "./src/navigation/rootnavigation";
 
 import { Provider } from "react-redux";
 
@@ -14,7 +11,6 @@ LogBox.ignoreAllLogs();
 const App = () => {
   return (
     
-    // <RootNavigation/>
     <Provider store={Store}>
     <Counter/>
     </Provider>

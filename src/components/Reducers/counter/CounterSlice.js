@@ -12,6 +12,7 @@ import { createSlice } from "@reduxjs/toolkit";
         decrement: (state) =>{
             state.value -=1
         },
+     
     },
 
 
