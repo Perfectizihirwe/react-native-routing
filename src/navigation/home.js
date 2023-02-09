@@ -1,10 +1,9 @@
 import React from "react";
 
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import {  ProfileScreen, SearchScreen, FolderScreen } from "./index";
+import { ProfileScreen, SearchScreen, FolderScreen } from "../screens/index";
 import { AntDesign, Feather } from "@expo/vector-icons";
-import { MainNav } from "../navigation/mainnavigation";
-
+import { MainNav } from "./mainnavigation";
 
 const Tab = createBottomTabNavigator();
 const { Navigator, Screen } = Tab;
